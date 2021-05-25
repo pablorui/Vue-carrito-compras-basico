@@ -1,7 +1,7 @@
 <template>
     <div class="todo">
         <h1>Carrito de compra</h1>
-          <div class="car_pro" v-for="item in items">
+          <div class="car_pro" v-for="item in items" :key="item.id">
             <div class="imgsd"><img src="../assets/img/producto.jpg"></div>
             <div class="cuerpo">
                 <div class="nomc">{{item.nombre}} </div>
